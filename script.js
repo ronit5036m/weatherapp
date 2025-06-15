@@ -52,7 +52,6 @@ async function checkWeather(city) {
     }
   } catch (err) {
     console.log("Somthing went wrong !!");
-    alert("Enter any city name...");
     return;
   }
 }

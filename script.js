@@ -52,7 +52,7 @@ async function checkWeather(city) {
     }
   } catch (err) {
     console.log("Somthing went wrong !!");
-    alert("Enter a value");
+    alert("Enter any city name...");
     return;
   }
 }
@@ -60,11 +60,12 @@ window.addEventListener("keyup", (e) => {
   if (e.key === "Enter") {
     checkWeather(inputBox.value);
   }
+  return;
 });
 
 searchBtn.addEventListener("click", () => {
   if (inputBox.value === "") {
-    alert("Enter city name");
+    alert("Enter any city name...");
     return;
   } else {
     checkWeather(inputBox.value);
